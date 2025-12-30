@@ -2,6 +2,7 @@
 name = "rust_httpie_xh"
 version = "0.1.0"
 edition = "2024"
+authors = ["xiaoniuhululu.com"]
 
 [dependencies]
 anyhow = "1.0.99" # 错误处理
