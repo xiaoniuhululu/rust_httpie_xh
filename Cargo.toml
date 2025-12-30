@@ -1,0 +1,18 @@
+[package]
+name = "rust_httpie_xh"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.99" # 错误处理
+clap = { version = "4.5.52", features = ["derive"] } # 命令行
+colored = "3.0.0" # 命令终端 颜色
+jsonxf = "1.1.1" # json格式化
+mime = "0.3.17" # 处理 mime 类型
+reqwest = { version = "0.12.24", features = ["json"] } # http 请求
+tokio = { version = "1.47.2", features = ["rt", "rt-multi-thread", "macros"] } # 异步
+serde_json = "1.0.147" # json 解析
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
